@@ -1,0 +1,1 @@
+Use `second-brain` to operate an Obsidian knowledge base. Use `second-brain-setup` to bootstrap or update one brain. Use `second-brain-doctor` to diagnose or migrate project instructions to AGENTS.md.

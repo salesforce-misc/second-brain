@@ -1,0 +1,30 @@
+{
+  "name": "second-brain",
+  "version": "0.3.0",
+  "description": "Multi-brain knowledge base operator with direct Obsidian support.",
+  "author": {
+    "name": "Shaked Klein Orbach"
+  },
+  "keywords": [
+    "knowledge-base",
+    "obsidian",
+    "wiki",
+    "agent-skills"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Second Brain",
+    "shortDescription": "Operate multi-brain Obsidian knowledge bases",
+    "longDescription": "Ingest sources, compile linked wiki content, answer grounded questions, check wiki health, and configure direct Obsidian access for one or many brains.",
+    "developerName": "Shaked Klein Orbach",
+    "category": "Productivity",
+    "capabilities": [
+      "Knowledge base management",
+      "Grounded question answering",
+      "Obsidian configuration"
+    ],
+    "defaultPrompt": [
+      "Inspect this project's second brains and show the main knowledge gaps."
+    ]
+  }
+}

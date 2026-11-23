@@ -1,0 +1,7 @@
+{
+  "name": "second-brain",
+  "description": "LLM-powered personal knowledge base operator for Obsidian",
+  "author": {
+    "name": "Shaked Klein Orbach"
+  }
+}
