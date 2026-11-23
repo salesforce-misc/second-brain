@@ -1,0 +1,13 @@
+{
+  "name": "second-brain-marketplace",
+  "owner": {
+    "name": "second-brain maintainers"
+  },
+  "plugins": [
+    {
+      "name": "second-brain",
+      "source": "./plugins/second-brain",
+      "description": "LLM-powered personal knowledge base operator for Obsidian"
+    }
+  ]
+}
