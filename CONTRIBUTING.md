@@ -3,9 +3,15 @@
 This page lists the operational governance model of this project, as well as the recommendations and requirements for how to best contribute to second-brain. We strive to obey these as best as possible. As always, thanks for contributing – we hope these guidelines make it easier and shed some light on our approach and processes.
 
 # Governance Model
-## Community Based
+## Salesforce Sponsored
 
-The intent and goal of open sourcing this project is to increase the contributor and user base. The governance model is one where new project leads (`admins`) will be added to the project based on their contributions and efforts, a so-called "do-acracy" or "meritocracy" similar to that used by all Apache Software Foundation projects.
+The intent and goal of open sourcing this project is to increase the contributor and user base. However, only Salesforce employees will be given `admin` rights and will be the final arbiters of what contributions are accepted or not.
+
+# Scope of contributions
+
+Contributions are welcome for the plugin's skills and their supporting docs, tests, and runtime adapters (Claude Code, Codex, OpenCode).
+
+Out of scope: new code that adds capabilities beyond the skills, such as new command-line tools or integrations with external services. Open an issue to discuss these first. Bug fixes, tests, and documentation for existing code (including `scripts/obsidian.py` and the OpenCode adapter) are in scope.
 
 # Issues, requests & ideas
 
@@ -46,12 +52,18 @@ Issues labelled `good first contribution`.
 - [x] Tests
   - The test suite, if provided, must be complete and pass
   - Increase code coverage, not versa.
-  - Use any of our testkits that contains a bunch of testing facilities you would need. For example: `import com.salesforce.op.test._` and borrow inspiration from existing tests.
+  - Run both suites before submitting: `cd plugins/second-brain/tests && python3 -B -m unittest` and `node --test plugins/second-brain/opencode/test-second-brain.mjs`.
 - [x] Dependencies
   - Minimize number of dependencies.
   - Prefer Apache 2.0, BSD3, MIT, ISC and MPL licenses.
 - [x] Reviews
   - Changes must be approved via peer code review
+
+# Development
+
+The plugin has no runtime dependencies. It uses Python 3 for `scripts/obsidian.py` and its tests, and Node.js for the OpenCode adapter test. Development rules for the plugin are in `plugins/second-brain/AGENTS.md`.
+
+New code files need the Salesforce license header. Copy it from an existing file, such as `plugins/second-brain/scripts/obsidian.py`.
 
 # Creating a Pull Request
 
